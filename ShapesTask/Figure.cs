@@ -13,33 +13,7 @@ namespace ShapesTask
 
     class Rectangle : Figure
     {
-        double _length, _width;
-
-        public double Length
-        {
-            get
-            {
-                return _length;
-            }
-
-            set
-            {
-                _length = value;
-            }
-        }
-
-        public double Width
-        {
-            get
-            {
-                return _width;
-            }
-
-            set
-            {
-                _width = value;
-            }
-        }
+        double _length, _width;   
 
         public Rectangle()
         {
@@ -47,6 +21,9 @@ namespace ShapesTask
             Length = rand.Next(3, 10);
             Width = rand.Next(5, 15);
         }
+
+        public double Length { get => _length; set => _length = value; }
+        public double Width { get => _width; set => _width = value; }
 
         public override double Square()
         {
@@ -59,44 +36,9 @@ namespace ShapesTask
         Random rand;
         double _a, _b, _c;
 
-        public double A
-        {
-            get
-            {
-                return _a;
-            }
-
-            set
-            {
-                _a = value;
-            }
-        }
-
-        public double B
-        {
-            get
-            {
-                return _b;
-            }
-
-            set
-            {
-                _b = value;
-            }
-        }
-
-        public double C
-        {
-            get
-            {
-                return _c;
-            }
-
-            set
-            {
-                _c = value;
-            }
-        }
+        public double A { get => _a; set => _a = value; }
+        public double B { get => _b; set => _b = value; }
+        public double C { get => _c; set => _c = value; }
 
         public Triangle()
         {
