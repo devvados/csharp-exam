@@ -51,12 +51,8 @@ namespace ParseTask
         public static double GetAverageAge(IEnumerable<Person> people)
         {
             int count = people.Count();
-            double average = 0;
 
-            foreach (var person in people)
-            {
-                average += person.Age;
-            }
+            var average = Convert.ToDouble(people.Sum(x => x.Age));
 
             return average / count;
         }
